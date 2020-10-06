@@ -1,0 +1,25 @@
+{
+  "name": "quiz-app",
+  "version": "0.0.1",
+  "description": "The best quiz app about neuefische.",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve .",
+    "greet": "echo 'hello'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miriamhaenle/muc-w1-quiz-app.git"
+  },
+  "author": "Coach Hänle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miriamhaenle/muc-w1-quiz-app/issues"
+  },
+  "homepage": "https://github.com/miriamhaenle/muc-w1-quiz-app#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "serve": "^11.3.2"
+  }
+}
