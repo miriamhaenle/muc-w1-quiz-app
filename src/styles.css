@@ -97,6 +97,7 @@ h6 {
 
 .navigation li {
   background: linear-gradient(45deg, #ff9505, #ff9505, #e2711d, #cc5803);
+  box-shadow: -1px -1px 4px #ff9505, -2px -2px 3px #000;
   list-style: none;
   padding: 5px 10px;
 }
