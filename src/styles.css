@@ -1,8 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+button {
+  border: none;
+  padding: 10px 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  color: #ff9505;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ff9505, 3px 3px 2px #e2711d, 5px 5px 5px #cc5803,
+    6px 6px 1px #000;
+}
+.main__home {
+  display: grid;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.button {
+  background: linear-gradient(#cc5803, #e2711d, #ff9505);
+  box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 5px #000;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: linear-gradient(#cc5803, #e2711d, #ff9505, #ff9505);
+  box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 5px #000;
+  font-variant: small-caps;
+}
+.card {
+  align-items: center;
+  background: #ffc971;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  width: 100vw;
+  padding: 10px;
+  width: 350px;
+}
+
+.card__answer {
+  display: none;
+}
+
+.card__taglist {
+  display: flex;
+  padding: 0;
+}
+.card__taglist li {
+  font-size: 0.8rem;
+  list-style: none;
+  margin: 0 10px;
+}
+
+.profile__img {
+  border-radius: 50%;
+  border: 2px dashed #e2711d;
+  box-shadow: 1px 1px 2px #e2711d, 2px 2px 4px #cc5803, 4px 4px 3px #000;
+
+  height: 200px;
+}
+
+.navigation {
+  background: rgba(255, 182, 39, 0.5);
+  bottom: 0;
+  font-size: 0.9rem;
+  padding: 10px;
+  position: sticky;
+}
+.navigation > ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 0;
+  width: 350px;
+}
+
+.navigation li {
+  background: linear-gradient(45deg, #ff9505, #ff9505, #e2711d, #cc5803);
+  list-style: none;
+  padding: 5px 10px;
+}
+
+.nav__link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.nav__link--active {
+  text-decoration: underline;
 }

@@ -7,20 +7,54 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Quiz App</h1>
-    </header>
-    <div class="card">
-      <h2>Question:</h2>
-      <p>How many miles must a man walk down?</p>
-      <button>Show answer</button>
-      <p>The answer my friend, is blowing in the wind.</p>
+    <header class="header"><h1>Profile</h1></header>
+    <main>
+      <section>
+        <img
+          src="https://placedog.net/500/500?random"
+          alt="dog"
+          class="profile__img"
+        />
+        <span>Coach Hänle</span>
+      </section>
+
+      <section>
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          nulla id laboriosam amet provident commodi, ullam quasi neque! Ipsa
+          maiores laboriosam illum pariatur voluptatem laudantium velit
+          temporibus dolorem, assumenda cumque.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>StyledComponents</li>
+          <li>Redux</li>
+        </ul>
+      </section>
+      <button>Logout</button>
+    </main>
+    <nav class="navigation">
       <ul>
-        <li>Song</li>
-        <li>Miles</li>
-        <li>Walking</li>
-        <li>Wild West</li>
+        <li>
+          <a href="/src/index.html" class="nav__link">Home</a>
+        </li>
+        <li><a href="/src/bookmarks.html" class="nav__link">Bookmarks</a></li>
+        <li>
+          <a href="/src/create.html" class="nav__link">Create</a>
+        </li>
+        <li>
+          <a href="/src/profile.html" class="nav__link nav__link--active"
+            >Profile</a
+          >
+        </li>
       </ul>
-    </div>
+    </nav>
   </body>
 </html>
