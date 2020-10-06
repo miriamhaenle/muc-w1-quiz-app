@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/miriamhaenle/muc-w1-quiz-app#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.4",
     "serve": "^11.3.2"
   }
 }
