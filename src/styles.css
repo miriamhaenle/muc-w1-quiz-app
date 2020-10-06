@@ -30,7 +30,7 @@ h6 {
   text-shadow: 1px 1px 2px #ff9505, 3px 3px 2px #e2711d, 5px 5px 5px #cc5803,
     6px 6px 1px #000;
 }
-.main__home {
+.main__grid {
   display: grid;
   gap: 20px;
   padding-bottom: 30px;
@@ -38,15 +38,14 @@ h6 {
 
 .button {
   background: linear-gradient(#cc5803, #e2711d, #ff9505);
+  border-radius: 3px;
   box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 5px #000;
   color: #f5f5f5;
   font-weight: 500;
 }
 
 .button:hover {
-  background: linear-gradient(#cc5803, #e2711d, #ff9505, #ff9505);
-  box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 5px #000;
-  font-variant: small-caps;
+  box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 8px #000;
 }
 .card {
   align-items: center;
@@ -55,6 +54,7 @@ h6 {
   flex-direction: column;
   margin: 0 auto;
   padding: 10px;
+  position: relative;
   width: 350px;
 }
 
@@ -72,12 +72,29 @@ h6 {
   margin: 0 10px;
 }
 
+.card__bookmark {
+  height: 30px;
+  position: absolute;
+  right: 11px;
+  top: -7px;
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
+.card__bookmark:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(80%) contrast(97%);
+}
+.card__bookmark--bmrkd {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(60%) contrast(97%);
+}
+
 .profile__img {
   border-radius: 50%;
   border: 2px dashed #e2711d;
   box-shadow: 1px 1px 2px #e2711d, 2px 2px 4px #cc5803, 4px 4px 3px #000;
-
   height: 200px;
+  width: 200px;
 }
 
 .navigation {
@@ -105,6 +122,10 @@ h6 {
 .nav__link {
   color: #f5f5f5;
   text-decoration: none;
+}
+
+.nav__link:hover {
+  letter-spacing: 0.03rem;
 }
 
 .nav__link--active {
