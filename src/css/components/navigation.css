@@ -3,7 +3,7 @@
   bottom: 0;
   font-size: 0.9rem;
   padding: 10px;
-  position: sticky;
+  position: fixed;
 }
 .navigation > ul {
   display: flex;
