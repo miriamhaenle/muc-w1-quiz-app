@@ -3,7 +3,8 @@
 }
 
 body {
-  background: var(--primary);
+  background: var(--white);
+  color: var(--secondary-dark);
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }

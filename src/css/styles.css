@@ -3,29 +3,5 @@
 @import './variables.css';
 @import './components/card.css';
 @import './components/navigation.css';
-
-.header {
-  color: #ff9505;
-  text-align: center;
-  text-shadow: 1px 1px 2px #ff9505, 3px 3px 2px #e2711d, 5px 5px 5px #cc5803,
-    6px 6px 1px #000;
-}
-
-.button {
-  background: linear-gradient(#cc5803, #e2711d, #ff9505);
-  border-radius: 3px;
-  box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 5px #000;
-  color: #f5f5f5;
-  font-weight: 500;
-}
-
-.button:hover {
-  box-shadow: 1px 1px 2px #e2711d, 2px 2px 5px #cc5803, 6px 6px 8px #000;
-}
-.profile__img {
-  border-radius: 50%;
-  border: 2px dashed #e2711d;
-  box-shadow: 1px 1px 2px #e2711d, 2px 2px 4px #cc5803, 4px 4px 3px #000;
-  height: 200px;
-  width: 200px;
-}
+@import './components/profile.css';
+@import './components/header.css';
