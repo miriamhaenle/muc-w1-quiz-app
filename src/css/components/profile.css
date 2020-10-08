@@ -1,3 +1,10 @@
+.profile {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .profile__img {
   border-radius: 50%;
   border: 2px dashed #e2711d;

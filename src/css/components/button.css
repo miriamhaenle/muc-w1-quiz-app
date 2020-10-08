@@ -1,0 +1,10 @@
+.button {
+  background: var(--primary);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px var(--secondary-light);
+  color: var(--white);
+}
+
+.button:hover {
+  box-shadow: 2px 2px 8px var(--secondary-light);
+}

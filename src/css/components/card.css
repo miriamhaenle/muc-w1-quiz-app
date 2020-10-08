@@ -5,6 +5,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
@@ -22,7 +23,18 @@
 .card__taglist li {
   font-size: 0.8rem;
   list-style: none;
-  margin: 0 10px;
+  margin: 0 7px;
+  padding: 5px;
+  text-align: center;
+}
+.card__taglist li:nth-child(even) {
+  background: var(--secondary-light);
+  border-radius: 2px 0 2px 0;
+}
+.card__taglist li:nth-child(odd) {
+  background: var(--secondary-dark);
+  color: var(--white);
+  border-radius: 0 2px 0 2px;
 }
 
 .card__bookmark {
@@ -32,6 +44,7 @@
   top: -5px;
   filter: invert(90%);
 }
+
 .card__bookmark:hover {
   filter: invert(27%);
 }

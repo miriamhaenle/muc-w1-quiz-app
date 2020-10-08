@@ -10,17 +10,16 @@
     <header class="header">
       <h1>Create</h1>
     </header>
-    <main>
-      <form action="submit">
-        <label
-          >Add a question<textarea name="" id="" cols="30" rows="10"></textarea>
-        </label>
-        <label
-          >Add the answer<textarea name="" id="" cols="30" rows="10"></textarea>
-        </label>
-        <label>Enter some tags<input type="text" /></label>
+    <main class="main__grid">
+      <form action="submit" class="form">
+        <label class="form__label" for="question">Add a question </label>
+        <textarea name="" id="question" cols="30" rows="10"></textarea>
+        <label class="form__label" for="answer">Add the answer </label>
+        <textarea name="" id="answer" cols="30" rows="10"></textarea>
+        <label class="form__label" for="tags">Enter some tags</label>
+        <input id="tags" type="text" />
+        <button class="button">Submit</button>
       </form>
-      <button>Submit</button>
     </main>
     <nav class="navigation">
       <ul>

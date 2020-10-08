@@ -1,5 +1,5 @@
 .main__grid {
   display: grid;
-  gap: 20px;
-  padding-bottom: 30px;
+  gap: 30px;
+  padding-bottom: 70px;
 }

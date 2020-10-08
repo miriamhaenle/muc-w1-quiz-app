@@ -1,6 +1,9 @@
 .navigation {
-  background: rgba(255, 182, 39, 0.5);
+  background-color: var(--white);
   bottom: 0;
+  box-shadow: 0 -2px 5px var(--secondary-light);
+  left: 0;
+  right: 0;
   font-size: 0.9rem;
   padding: 10px;
   position: fixed;
@@ -14,21 +17,21 @@
 }
 
 .navigation li {
-  background: linear-gradient(45deg, #ff9505, #ff9505, #e2711d, #cc5803);
-  box-shadow: -1px -1px 4px #ff9505, -2px -2px 3px #000;
   list-style: none;
   padding: 5px 10px;
 }
 
 .nav__link {
-  color: #f5f5f5;
+  color: var(--secondary-dark);
   text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
 .nav__link:hover {
-  letter-spacing: 0.03rem;
+  color: var(--primary);
 }
 
 .nav__link--active {
   text-decoration: underline;
+  color: var(--primary);
 }
