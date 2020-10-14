@@ -12,7 +12,9 @@
       <h1>Quiz App</h1>
     </header>
 
-    <main class="main__grid">
+    <!-- Home -->
+
+    <main class="main__grid js-home">
       <div class="card">
         <img
           src="images/lesezeichen.svg"
@@ -69,14 +71,120 @@
       </div>
     </main>
 
+    <!-- Bookmarks -->
+
+    <header class="header hidden"><h1>Bookmarks</h1></header>
+    <main class="main__grid js-bookmarks hidden">
+      <div class="card">
+        <img
+          src="images/lesezeichen.svg"
+          alt="bookmark"
+          class="card__bookmark card__bookmark--bmrkd"
+        />
+        <h2>Question:</h2>
+        <p>When was neuefische founded?</p>
+        <button class="button">Show answer</button>
+        <p>neuefische was founded in 2018.</p>
+        <ul class="card__taglist">
+          <li>Startup</li>
+          <li>Founded</li>
+          <li>neuefische</li>
+          <li>Bootcamp</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <img
+          src="images/lesezeichen.svg"
+          alt="bookmark"
+          class="card__bookmark card__bookmark--bmrkd"
+        />
+        <h2>Question:</h2>
+        <p>What courses can you take at neuefische?</p>
+        <button class="button">Show answer</button>
+        <p class="card__answer">
+          Web Development, Java Development, Data Science
+        </p>
+        <ul class="card__taglist">
+          <li>Development</li>
+          <li>Courses</li>
+          <li>Bootcamp</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <img
+          src="images/lesezeichen.svg"
+          alt="bookmark"
+          class="card__bookmark card__bookmark--bmrkd"
+        />
+        <h2>Question:</h2>
+        <p>Who was the first head coach at neuefische?</p>
+        <button class="button">Show answer</button>
+        <p class="card__answer">Jerry (?)</p>
+        <ul class="card__taglist">
+          <li>Development</li>
+          <li>Head Coach</li>
+          <li>Bootcamp</li>
+          <li>Web Development</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Create -->
+
+    <header class="header hidden">
+      <h1>Create</h1>
+    </header>
+    <main class="main__grid js-create hidden">
+      <form action="submit" class="form">
+        <label class="form__label" for="question">Add a question </label>
+        <textarea name="" id="question" cols="30" rows="10"></textarea>
+        <label class="form__label" for="answer">Add the answer </label>
+        <textarea name="" id="answer" cols="30" rows="10"></textarea>
+        <label class="form__label" for="tags">Enter some tags</label>
+        <input id="tags" type="text" />
+        <button class="button">Submit</button>
+      </form>
+    </main>
+
+    <!-- Profile -->
+
+    <header class="header hidden"><h1>Profile</h1></header>
+    <main class="main__grid profile js-profile hidden">
+      <section class="profile__">
+        <img
+          src="https://placedog.net/500/500?random"
+          alt="dog"
+          class="profile__img"
+        />
+        <span>Coach Hänle</span>
+      </section>
+
+      <section class="profile">
+        <h2>About me</h2>
+        <p>Wohoo. Cooler Text. Cool. Cool Cool.</p>
+      </section>
+
+      <section class="profile">
+        <h2>Skills</h2>
+        <ul>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>StyledComponents</li>
+          <li>Redux</li>
+        </ul>
+      </section>
+      <button class="button">Logout</button>
+    </main>
+
     <nav class="navigation">
       <ul>
-        <li>
-          <a href="index.html" class="nav__link nav__link--active">Home</a>
-        </li>
-        <li><a href="bookmarks.html" class="nav__link">Bookmarks</a></li>
-        <li><a href="create.html" class="nav__link">Create</a></li>
-        <li><a href="profile.html" class="nav__link">Profile</a></li>
+        <li class="nav__link home">Home</li>
+        <li class="nav__link bookmarks">Bookmarks</li>
+        <li class="nav__link create">Create</li>
+        <li class="nav__link profile-btn">Profile</li>
       </ul>
     </nav>
   </body>

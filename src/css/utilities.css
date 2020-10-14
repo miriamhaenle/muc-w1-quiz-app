@@ -3,3 +3,7 @@
   gap: 30px;
   padding-bottom: 70px;
 }
+
+.hidden {
+  display: none !important;
+}
