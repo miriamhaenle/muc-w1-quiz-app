@@ -1,9 +1,9 @@
 const bookmarks = document.querySelectorAll('.card__bookmark');
 
-console.log(bookmarks);
+bookmarks.forEach(toggleBookmark);
 
-bookmarks.forEach((bookmark) => {
-  bookmark.addEventListener('click', () => {
-    bookmark.classList.toggle('card__bookmark--bmrkd');
-  });
-});
+function toggleBookmark(bookmark) {
+  bookmark.addEventListener('click', () =>
+    bookmark.classList.toggle('card__bookmark--bmrkd')
+  );
+}
