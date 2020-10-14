@@ -45,9 +45,6 @@
   filter: invert(90%);
 }
 
-.card__bookmark:hover {
-  filter: invert(27%);
-}
 .card__bookmark--bmrkd {
   filter: invert(27%);
 }
