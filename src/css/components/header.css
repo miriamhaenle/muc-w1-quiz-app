@@ -1,4 +1,5 @@
 .header {
+  background: hotpink;
   color: var(--secondary-dark);
   text-align: center;
 }
